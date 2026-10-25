@@ -26,6 +26,7 @@
 
   @include breakpoint($large) {
     @include span(3 of 12); // wider sidebar for a bigger photo
+    padding-right: 2em; // keeps the photo and bio clear of the main column
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
