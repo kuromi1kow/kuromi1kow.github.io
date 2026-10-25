@@ -442,3 +442,10 @@
     }
   }
 }
+
+// Phones: tighter menu spacing so Publications and CV fit next to the name
+@media screen and (max-width: #{$small - 1px}) {
+  .greedy-nav a {
+    margin: 0 0.6rem;
+  }
+}

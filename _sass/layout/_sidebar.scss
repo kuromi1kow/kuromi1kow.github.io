@@ -324,3 +324,49 @@
     }
   }
 }
+
+// Phones and small tablets: a bigger photo, and contact links shown
+// right away instead of behind the "Follow" button
+@media screen and (max-width: #{$large - 1px}) {
+  .sidebar {
+    padding-top: 0 !important; // the script adds masthead-height padding meant for desktop
+  }
+
+  .author__avatar {
+    width: 96px;
+
+    img {
+      max-width: 96px;
+    }
+  }
+
+  .author__content {
+    padding-right: 0;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+
+    button {
+      display: none;
+    }
+  }
+
+  .author__urls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    position: static;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    z-index: auto;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
