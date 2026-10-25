@@ -1,38 +1,33 @@
-# Assylkhan Geniyat — academic website
+# Assylkhan Geniyat
 
-Personal academic website built on the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template and hosted on GitHub Pages.
+Source code for my academic website: **[kuromi1kow.github.io](https://kuromi1kow.github.io)**
 
-## Где что лежит
+I'm an MS student in Artificial Intelligence at Boston University, funded by the Bolashak Presidential Scholarship. I study retrieval-augmented generation (RAG): whether the answers of large language models are actually supported by the evidence they cite, and how to train systems so that they are.
 
-| Что | Файл |
-|---|---|
-| Имя, био в сайдбаре, email, LinkedIn, адрес сайта | `_config.yml` |
-| Главная страница (About, News, Selected publications) | `_pages/about.md` |
-| Публикации (по файлу на статью) | `_publications/*.md` |
-| Research & Projects (по файлу на проект) | `_portfolio/*.md` |
-| CV-страница | `_pages/cv.md` |
-| PDF резюме | `files/Assylkhan_Geniyat_CV.pdf` |
-| Меню сверху | `_data/navigation.yml` |
-| Фото | `images/profile.jpg` (квадратное; путь задан в `_config.yml` → `avatar`) |
+## On the site
 
-## Как опубликовать на GitHub Pages
+- **About**: research interests, news and selected publications
+- **[Publications](https://kuromi1kow.github.io/publications/)**: papers and manuscripts, with summaries and figures
+- **[CV](https://kuromi1kow.github.io/files/Assylkhan_Geniyat_CV.pdf)**: full CV as a PDF
 
-1. Создай на GitHub **пустой публичный** репозиторий с именем `<твой-username>.github.io`.
-2. В `_config.yml` замени `url` и `repository` (помечены `TODO`) на свой username.
-3. Запушь эту папку в ветку `master`:
-   ```bash
-   git add -A
-   git commit -m "My academic website"
-   git remote add origin https://github.com/<твой-username>/<твой-username>.github.io.git
-   git push -u origin master
-   ```
-4. На GitHub: **Settings → Pages → Source: GitHub Actions**. Через пару минут сайт будет на `https://<твой-username>.github.io`.
+## Contact
 
-## Локальный просмотр
+- Email: asylhangeniat@gmail.com
+- LinkedIn: [assylkhangeniyat](https://www.linkedin.com/in/assylkhangeniyat/)
+
+## Built with
+
+[Jekyll](https://jekyllrb.com) and the [Academic Pages](https://github.com/academicpages/academicpages.github.io) template (a fork of [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)). Every push to `master` builds and deploys the site to GitHub Pages through GitHub Actions.
+
+To run it locally (Ruby 3.x and Bundler required):
 
 ```bash
-PATH="/opt/homebrew/opt/ruby/bin:$PATH" bundle install
-PATH="/opt/homebrew/opt/ruby/bin:$PATH" bundle exec jekyll serve
+bundle install
+bundle exec jekyll serve
 ```
 
-Сайт откроется на http://localhost:4000. После правок в `_config.yml` сервер нужно перезапустить.
+Then open http://localhost:4000.
+
+## License
+
+The site template is released under the MIT License (see [LICENSE](LICENSE)). The content (text, CV, photos and figures) is © Assylkhan Geniyat; figures from the IEEE paper are © 2024 IEEE.
